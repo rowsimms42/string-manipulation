@@ -4,7 +4,7 @@ TITLE assignment6.asm    (assignment6.asm)
 ; OSU email address: simmonli@oregonstate.edu
 ; Course number/section: CS271
 ; Project Number: 6             
-; Description: Designing, implementing, and calling low-level I/O procedures. Implementing and using a macro.
+; Description: Designing, implementing, and calling low-level I/O procedures. 
 
 INCLUDE Irvine32.inc
 
