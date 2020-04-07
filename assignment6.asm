@@ -1,10 +1,9 @@
 TITLE assignment6.asm    (assignment6.asm)
 
 ; Author: Rowan Simmons
-; Last Modified: March 14, 2020
 ; OSU email address: simmonli@oregonstate.edu
 ; Course number/section: CS271
-; Project Number: 6             Due Date: March 16, 2020
+; Project Number: 6             
 ; Description: Designing, implementing, and calling low-level I/O procedures. Implementing and using a macro.
 
 INCLUDE Irvine32.inc
@@ -53,14 +52,14 @@ MAX = 10; maximum user can enter in array
 .data
 ; (insert variable definitions here)
 intro_1			BYTE		"Designing low-level I/0			by Rowan Simmons", 0
-intro_2			BYTE		"Please enter 10 signed decimal integers. Each number needs to be ", 0
+intro_2			BYTE		"Please enter 10 unsigned decimal integers. Each number needs to be ", 0
 intro_3			BYTE		"small enough to fit inside a 32 bit register. After you have finished ", 0
 intro_4			BYTE		"inputting the raw numbers, I will display a list of the integers ", 0
 intro_5			BYTE		"the sum of the integers, and their average values.", 0
-error		    BYTE		"ERROR: You did not enter a signed number, or your number was too big.", 0
+error		    BYTE		"ERROR: You did not enter an unsigned number, or your number was too big.", 0
 stringNum       BYTE		30 DUP(? )
 userNum         DWORD		?
-prompt			BYTE		"Please enter a signed number: ", 0
+prompt			BYTE		"Please enter an unsigned number: ", 0
 goodBye			BYTE		"Results certified by Rowan Simmons. Good-bye.", 0
 numsList		BYTE		"You entered the following numbers: ", 0
 sumList         BYTE		"The sum of these numbers is: ", 0
